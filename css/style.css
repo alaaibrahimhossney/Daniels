@@ -1,0 +1,487 @@
+:root{
+    --main-color:#343434;
+    --gray-color:#f4f4f495;
+    --white-color:#FFFFFF;
+    --sec-padding:50px 0;
+}
+html{
+    scroll-padding-top: 57.6px;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Montserrat", sans-serif;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+
+.header {
+  height: 100vh;
+  background-image: url(../images/imgs/bg.jpg);
+  background-size: cover;
+  background-position: center center;
+  overflow: auto;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.header-caption {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  color: white;
+  margin-top: 350px;
+}
+
+.home-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.66);
+}
+
+
+.header-caption h5 {
+  font-weight: 800;
+  font-size: 50px;
+  color: rgb(255, 255, 255);
+  line-height: 55px;
+
+
+}
+
+.header-caption h1{
+font-size: 70px;
+  margin: 0 0 10px;
+  
+}
+.social-icon a{
+    color: white;
+    background-color: transparent;
+     margin: 0 8px;
+}
+/*global style */
+.sec-header{
+    margin-bottom: 45px;
+}
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.nav-tabs{
+    border-bottom: none;
+  
+    margin-bottom: 40px;
+}
+.portfolio .nav-link{
+    color: black;
+    font-weight: 600;
+    line-height: 20px;
+    border: transparent;
+
+}
+.nav-tabs .nav-link.active{
+    text-decoration: underline;
+    font-weight: 600;
+    border-color: white;
+    
+    
+}
+.sec-header h2::after
+ {
+    content: "";
+    width: 100%;
+    height: 30px;
+    background-image: url(../images/imgs/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    left: 0px;
+    z-index: -1;
+    
+}
+
+.sec-header h2 {
+    font-weight: 900;
+    font-size: 40px;
+    position: relative;
+    display: inline-block;
+    z-index: 4;
+}
+.underline {
+  width: 50px;
+  height: 4px;
+  background: var(--main-color); 
+  margin: 5px auto 0;  /* auto يخليها في النص */
+  border-radius: 2px;  
+}
+
+.portfolio{
+    padding: var(--sec-padding);
+}
+.portfolio-card{
+    position: relative;
+    overflow: hidden;
+}
+.portfolio-card:hover .layer{
+    top: 3%;
+    left: 3%;
+   
+    
+}
+.layer{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.95),rgba(255, 255, 255, 0.744));
+    position: absolute;
+    top:100%;
+    left: 0;
+    width: 95%;
+    height: 95%;
+    color: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: all 0.3s;
+
+
+}
+a {
+    background-color: transparent;
+    text-decoration:none !important;
+}
+.portfolio-card .layer .icon i {
+   
+    width: 25px;
+    height: 25px;
+    line-height: 30px;
+    color: rgb(238, 238, 238);
+    border-radius: 50%;
+    border-width: 0px;
+    border-style: solid;
+    border-color: rgb(17, 17, 17);
+    background: rgb(17, 17, 17);
+}
+.fa{
+    font-size: 14px;
+}
+
+/* start_about style */
+.client{
+    background-color: var(--gray-color);
+}
+.about{
+    margin-bottom: 50px;
+}
+.hero-img{
+        padding: 0 0 0 30px;
+    position: relative;
+    z-index: 4;
+}
+.mb-30
+ {
+    margin-bottom: 30px !important;
+}
+ .hero-img:after {
+    content: "";
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: 0px;
+    bottom: -30px;
+    background-image: url(../images/imgs/dots.png);
+    background-repeat: repeat;
+    z-index: -1;
+}
+h3 {
+  font-weight: bold;
+}
+
+p {
+    line-height: 1.6;
+    margin: 0;
+    font-size: 15px;
+    color: #748182;
+}
+
+.progress {
+  height: 30px;
+  border-radius: 5px;
+  background: #f3f3f3; /* الخلفية الفاتحة */
+  margin-bottom: 20px;
+  overflow: visible;
+}
+
+.progress-bar {
+  background: #1c1c1c; /* البار أسود */
+  text-align: left;
+  padding-left: 15px;
+  font-weight: bold;
+  line-height: 30px;
+  border-radius: 5px;
+  position: relative;
+}
+.progress.skill-bar{
+    margin-bottom: 35px;
+}
+.skill {
+  color: #fff;
+  font-size: 14px;
+   
+}
+
+.skill .val {
+  float: right;
+  margin-right: 15px;
+  color: #fff;
+ 
+}
+ .btn{
+    margin-top: 20px !important;
+ }
+
+.btn-dark {
+  background: #000;
+  color: #fff;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.btn-dark:hover {
+  background: #fff;
+  color: #000;
+}
+/* end_aboutstyle */
+
+.services .item {
+    padding: 50px 20px;
+    background: #fff;
+    
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+.services,.contact{
+    background-color: var(--gray-color);
+    padding: 50px 0;
+}
+
+.services .item .icon {
+     width: 70px;         /* حجم الدائرة */
+  height: 70px;
+  border-radius: 50%;  /* يخليها دائرة */
+  background: var(--gray-color);    /* لون خلفية الدائرة */
+  display: flex;
+  align-items: center; 
+  justify-content: center; /* تتوسط أفقيًا */
+  margin: 0 auto 20px; /* center الدائرة فوق النص */
+  color:#1C1C1C ;         /* لون الأيقونة */
+  font-size: 40px;     /* حجم الأيقونة */
+  transition: 0.3s;    /* تأثير hover */
+}
+.services .item .icon i ,.contact  .item .icon i{
+    font-size: 30px;
+}
+.services .item .icon:hover,.contact .item .icon:hover {
+  background: #1C1C1C; /* لون مختلف عند hover */
+color: #fff; 
+}
+.item h6{
+    font-size: 18px;
+}
+.carousel-indicators [data-bs-target]{
+    width: 10px;
+    height: 10px;
+    background-color:#869791;
+        transition: opacity 0.2s ease;
+    border-radius: 50%;
+        margin: 5px 7px;
+
+}
+.carousel-item span{
+    font-size: 12px;
+    font-weight: 600;
+    color: #888;
+    margin-bottom: 30px;
+}
+.carousel-item h6{
+        font-size: 16px;
+    font-weight: 600;
+    margin: 30px 0 5px;
+}
+.carousel-item p {
+    line-height: 1.6;
+    margin: 0;
+    font-size: 15px;
+    color: #748182;
+}
+.numbers .icon i {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.numbers h3 {
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+.numbers p {
+    font-weight: 600;
+    margin-bottom: 30px;
+
+    line-height: 1.6;
+    margin: 0;
+    font-size: 15px;
+    color: #748182;
+}
+
+
+
+
+.contact .container {
+  margin-left: 200px; 
+}
+
+
+.contact .item {
+  margin-bottom: 30px;
+}
+
+.contact .item .icon {
+  width: 70px;         /* حجم الدائرة */
+  height: 70px;
+  border-radius: 50%;  /* يخليها دائرة */
+  background: rgba(128, 128, 128, 0.315);    /* لون خلفية الدائرة */
+  display: flex;
+  align-items: center; 
+  justify-content: center; /* تتوسط أفقيًا */
+  margin: 0 auto 20px; /* center الدائرة فوق النص */
+  color:#1C1C1C ;         /* لون الأيقونة */
+  font-size: 40px;     /* حجم الأيقونة */
+  transition: 0.3s;
+}
+
+.contact.item h6 {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.form .form-control {
+  border-radius: 8px;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  background-color: rgba(128, 128, 128, 0.315); ;
+}
+
+.contact button.btn {
+  border-radius: 5px;
+  padding: 10px 40px;
+}
+
+
+.team-card {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+}
+
+.team-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.team-img img {
+  width: 100%;
+  display: block;
+}
+
+.team-img .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.team-card:hover .overlay {
+  opacity: 1;
+}
+
+.social {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+.social li a {
+  width: 40px;
+  height: 40px;
+  background: #000;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  transition: transform 0.7s ease, background 0.3s ease;
+  transform: rotate(0deg);
+
+}
+
+.social li a:hover {
+    background-image: linear-gradient(rgb(255, 255, 255),rgb(255, 255, 255));
+    background-color: var(--main-color);
+     transform: rotate(180deg);
+}
+
+.team-info {
+  background: #555;
+  color: #fff;
+  padding: 25px;
+  text-align: center;
+}
+
+.team-info h5 {
+ font-size: 20px;
+  text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+}
+
+.team-info .role {
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+}
+.team{
+   padding-top: 30px;
+    margin-top: 30px;
+    background-color: var(--gray-color);
+}
+
+
+
+footer {
+    background: #1c1c1c;
+    padding: 30px;
+}
+
+footer p {
+    font-size: 13px;
+    word-spacing: 2px;
+    
+}
